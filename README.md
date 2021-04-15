@@ -2,7 +2,7 @@
 
 This repository contains supporting code and data for the publication _"Unmixing river sediments for the elemental geochemistry of their source regions"_ (Under review; [preprint](link_here))
 
-This repository is archived at point of submission at Zenodo - Badge here
+This repository is archived at point of submission at Zenodo - [![DOI](https://zenodo.org/badge/352673034.svg)](https://zenodo.org/badge/latestdoi/352673034)
 
 This repository contains 6 files.
 
