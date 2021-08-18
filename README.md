@@ -4,7 +4,7 @@ This repository contains supporting code and data for the publication _"Unmixing
 
 This repository is archived at point of submission at Zenodo - [![DOI](https://zenodo.org/badge/352673034.svg)](https://zenodo.org/badge/latestdoi/352673034)
 
-This repository contains 7 files.
+This repository contains 11 files.
 
 ## Minimum working example script 
 
@@ -12,7 +12,7 @@ This repository contains 7 files.
 
 ### Additional Scripts 
 
-Alongside the above notebook that describes the procedure utilised in the manuscript I have also provided two modified versions, not discussed in the manuscript but potentially of general interest.
+Alongside the above notebook that describes the procedure utilised in the manuscript I have also provided two modified versions, not discussed in the manuscript but potentially of general interest. 
 
 First, `fast_inversion_mwe.ipynb`, which is exactly the same as the published version but *significantly* faster. This speed-up is achieved by using a faster optimisation algorithm (Powell's method) and starting the inversion closer to the optimal solution. I strongly suggest using this faster version in further work.
 
