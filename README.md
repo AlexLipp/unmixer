@@ -14,9 +14,9 @@ This repository contains 11 files.
 
 Alongside the above notebook that describes the procedure utilised in the manuscript I have also provided two modified versions, not discussed in the manuscript but potentially of general interest. 
 
-First, `fast_inversion_mwe.ipynb`, which is exactly the same as the published version but *significantly* faster. This speed-up is achieved by using a faster optimisation algorithm (Powell's method) and starting the inversion closer to the optimal solution. I strongly suggest using this faster version in further work.
+First, `fast_inversion_mwe.ipynb`, which is broadly the same as the published version but *significantly* faster (> 10x). This speed-up is achieved by using a faster optimisation algorithm (Powell's method) and starting the inversion closer to the optimal solution. I strongly suggest using this faster version in further work.
 
-Second, a multivariate extension of the univariate example is provided in `multivariate_inversion_mwe.ipynb`. Instead of solving each element individually, multiple specified elements are all inverted simultaneously, all whilst obeying the constraints of compositional data, i.e. strictly positive variables that sum to a closure value (e.g. 100 %, 1000000 mg/kg etc.). is performed using the. Whilst mathematically neat, it is actually (at present...) computationally less efficient than running each element in parallel as it is quadratic w.r.t to the number of elements inverted. Making this multivariate implementation more efficient is left as an exercise to the reader...
+Second, a multivariate extension of the univariate example is provided in `multivariate_inversion_mwe.ipynb`. Instead of solving each element individually, multiple specified elements are all inverted simultaneously, all whilst obeying the constraints of compositional data, i.e. strictly positive variables that sum to a closure value (e.g. 100 %, 1000000 mg/kg etc). Whilst mathematically neat and self-contained, it is actually (at present...) computationally less efficient than running each element in parallel as it is quadratic w.r.t to the number of elements inverted. Making this multivariate implementation more efficient is left as an exercise to the reader... 
 
 ## Data
 
