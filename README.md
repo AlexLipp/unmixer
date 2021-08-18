@@ -1,14 +1,22 @@
-# Inverting fluvial sedimentary geochemistry
+# Unmixing fluvial sedimentary geochemistry
 
-This repository contains supporting code and data for the publication _"Unmixing river sediments for the elemental geochemistry of their source regions"_ (Under review; [preprint](link_here))
+This repository contains supporting code and data for the publication _"Unmixing river sediments for the elemental geochemistry of their source regions"_ (Under review; [preprint](link_here)). 
 
 This repository is archived at point of submission at Zenodo - [![DOI](https://zenodo.org/badge/352673034.svg)](https://zenodo.org/badge/latestdoi/352673034)
 
 This repository contains 7 files.
 
-## Scripts 
+## Minimum working example script 
 
 `inversion_mwe.ipynb` is a 'Jupyter Notebook' which contains an annotated minimum working example for the inversion procedure described in the manuscript written in `python`. A compiled version of this `.ipynb` is given as `inversion_mwe.html` that displays the code and the outputs, and can be opened in any browser.
+
+### Additional Scripts 
+
+Alongside the above notebook that describes the procedure utilised in the manuscript I have also provided two modified versions, not discussed in the manuscript but potentially of general interest.
+
+First, `fast_inversion_mwe.ipynb`, which is exactly the same as the published version but *significantly* faster. This speed-up is achieved by using a faster optimisation algorithm (Powell's method) and starting the inversion closer to the optimal solution. I strongly suggest using this faster version in further work.
+
+Second, a multivariate extension of the univariate example is provided in `multivariate_inversion_mwe.ipynb`. Instead of solving each element individually, multiple specified elements are all inverted simultaneously, all whilst obeying the constraints of compositional data, i.e. strictly positive variables that sum to a closure value (e.g. 100 %, 1000000 mg/kg etc.). is performed using the. Whilst mathematically neat, it is actually (at present...) computationally less efficient than running each element in parallel as it is quadratic w.r.t to the number of elements inverted. Making this multivariate implementation more efficient is left as an exercise to the reader...
 
 ## Data
 
